@@ -1,0 +1,363 @@
+body {
+	background-color: rgb(240, 240, 240);
+}
+
+.cabecalho {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2)
+}
+
+.cabecalho a {
+	text-decoration: none;
+	color: rgb(9, 99, 11);
+}
+
+.cabecalho a:hover {
+	border-bottom: 1px solid rgb(9, 99, 11);
+}
+
+.finaissemana {
+	background-color: #fff;
+	width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 12px 16px rgba(0,0,0,0.2)
+}
+
+
+.finaissemana h1 {
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 15px;;
+	padding-bottom: 30px;
+	color: rgb(9, 99, 11);
+}
+
+
+.sessao {
+	display: flex;
+	padding: 20px;
+
+}
+
+
+.sessao .ubatuba {
+	width: 40%;
+}
+
+.sessao .ubatuba h2 {
+	font-size: 1rem;
+	padding: 10px 5px;
+	background-color: rgb(9, 99, 11);
+	margin-right: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+
+.sessao .ubatuba p {
+	padding-bottom: 10px;
+}
+
+.sessao .ubatuba img {
+	width: 200px;
+	max-width: 100%;
+	padding-bottom: 10px;
+}
+
+.sessao .ubatuba-foto {
+	background-image: url(imagens/ubatuba.jpg);
+	max-width: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 2560px) {
+	.sessao .ubatuba img {
+		width: 400px;
+	}
+
+	#principal {
+		width: 600px;
+		left: -600px;
+	}
+
+	#chk:checked ~ #principal {
+    transform: translateX(600px);
+	}
+
+	#datas-especiais,
+	#ferias {
+
+    width: 550px;
+    left: -550px;
+	}
+
+	#datas-especiais:target,
+	#ferias:target {
+
+    transform: translateX(550px);
+    box-shadow: 2px 2px 5px 2px rgba(0,10,0,.5);
+	}
+
+	ul li a {
+		font-size: 2.3rem;
+	}
+
+	.cabecalho a {
+		font-size: 1.8rem;
+	}
+
+	.finaissemana {
+		width: 2000px;
+	}
+
+	.finaissemana h1 {
+		font-size: 3.5rem;
+	}
+
+	.sessao .ubatuba h2 {
+		font-size: 1.8rem;
+	}
+
+	.sessao .ubatuba p {
+		font-size: 1.6rem;
+	}
+}
+
+@media (max-width: 1440px) {
+	.cabecalho a {
+		font-size: 1.3rem;
+	}
+
+	.finaissemana h1  {
+		font-size: 2.5rem;
+	}
+
+	.sessao .ubatuba h2 {
+		font-size: 1.1rem;
+	}
+
+	.sessao .ubatuba p {
+		font-size: 1.0rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.cabecalho a {
+		font-size: 1.4rem;
+	}
+
+	.sessao .ubatuba h2 {
+		font-size: 1.2rem;
+	}
+
+	.sessao .ubatuba p {
+		font-size: 1rem;
+		margin-right: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cabecalho a {
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+
+	.finaissemana h1 {
+		font-size: 2.5rem;
+	}
+
+	.sessao .ubatuba h2 {
+		font-size: 1.2rem;
+	}
+
+	.sessao .ubatuba p {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 425px) {
+	body {
+    	padding-top: 70px;
+	}
+
+	.cabecalho a {
+		font-size: 1rem;
+	}
+
+	.cabecalho .menu-icon {
+		display: none;
+	}
+
+	.finaissemana {
+		width: 100%;
+		margin: 0px;
+	}
+
+	.finaissemana h1 {
+		font-size: 1.5rem;
+	}
+
+	.sessao {
+		flex-wrap: wrap;
+	}
+
+	.sessao .ubatuba {
+		width: 100%;
+	}
+	.sessao .ubatuba h2 {
+		margin-right: 0px;
+		font-size: 1rem;
+	}
+
+	.sessao .ubatuba1-foto {
+		height: 300px;
+		background-image: url(imagens/ubatuba.jpg);
+		background-size: cover;
+		background-origin: no-repeat;
+		background-position: center center;
+		margin-bottom: 10px;
+	}
+
+	.sessao .ubatuba p {
+		font-size: 0.8rem;
+	}
+	
+}
+
+@media (max-width: 375px) {
+	.sessao .ubatuba h2 {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.sessao .ubatuba h2 {
+		font-size: 0.8rem;
+	}
+
+	.sessao .ubatuba p {
+		font-size: 0.8rem;
+	}
+}
+
+
+.sessao .guaruja {
+	width: 40%;
+	order: 2;
+}
+
+.sessao .guaruja h2 {
+	font-size: 1rem;
+	padding: 10px 5px;
+	background-color: rgb(9, 99, 11);
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.sessao .guaruja p {
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+.sessao .guaruja img {
+	width: 200px;
+	max-width: 100%;
+	padding-bottom: 10px;
+}
+
+.sessao .guaruja-foto {
+	background-image: url(imagens/guaruja.jpg);
+	max-width: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	order: 1;
+}
+
+@media (min-width: 2560px) {
+	.sessao .guaruja h2 {
+		font-size: 1.8rem;
+	}
+
+	.sessao .guaruja p {
+		font-size: 1.6rem;
+	}
+
+	.sessao .guaruja img {
+		width: 400px;
+		margin-left: 10px;
+	}
+
+}
+
+@media (max-width: 1440px) {
+	.sessao .guaruja img {
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 768px){
+	.sessao .guaruja h2 {
+		font-size: 1.2rem;
+	}
+
+	.sessao .guaruja p {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 425px) {
+
+	.finaissemana {
+		width: 100%;
+		margin: 0px;
+	}
+
+	.finaissemana h1 {
+		font-size: 1.5rem;
+	}
+
+	.sessao {
+		flex-wrap: wrap;
+	}
+
+	.sessao .guaruja {
+		width: 100%;
+	}
+	.sessao .guaruja h2 {
+		margin-left: 0px;
+		font-size: 1rem;
+	}
+
+	.sessao .guaruja1-foto {
+		height: 300px;
+		background-image: url(imagens/guaruja.jpg);
+		background-size: cover;
+		background-origin: no-repeat;
+		background-position: center center;
+		margin-bottom: 10px;
+	}
+
+	.sessao .guaruja p {
+		font-size: 0.8rem;
+		margin-left: 0px;
+	}
+
+	.sessao .guaruja img {
+		margin-left: 0px;
+	}
+	
+}
+
+@media (max-width: 375px) {
+	.sessao .guaruja h2 {
+	 	font-size: 0.9rem;
+	}
+
+	.sessao .guaruja p {
+		font-size: 0.8rem;
+	}
+}
